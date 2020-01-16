@@ -1,11 +1,17 @@
-const checkSquare = (array1, array2) => {
-  const array1Squared = array1.map(item => item * item);
-  console.log(array1Squared);
-  array1Squared.forEach((item, index) => {
-    if (item !== array2[index]);
+const checkSquare = (arr1, arr2) => {
+  if (arr1.length !== arr2.length) {
     return false;
-  });
+  }
 
+  for (let i = 0; i < arr1.length; i++) {
+    let correctIndex = arr2.indexOf(arr1[i] ** 2);
+
+    if (correctIndex === -1) {
+      return false;
+    }
+
+    arr2.splice(correctIndex, 1);
+  }
   return true;
 };
 
