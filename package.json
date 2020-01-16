@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/joeldmyers/data-structures-review-2020/issues"
   },
-  "homepage": "https://github.com/joeldmyers/data-structures-review-2020#readme"
+  "homepage": "https://github.com/joeldmyers/data-structures-review-2020#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
