@@ -15,6 +15,8 @@
 //   return true;
 // };
 
+// Note: above is bad because indexOf is O(n) under the hood, so the above is quadratic.
+
 const checkSquare = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
     return false;
